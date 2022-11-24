@@ -5,7 +5,9 @@ import com.dailycodebuffer.sprinboot.tutorial.entity.Department;
 import java.util.List;
 
 public interface DepartmentService {
-    Department saveDepartment(Department department);
+    public Department saveDepartment(Department department);
 
-    List<Department> fetchDepartmentList();
+    public List<Department> fetchDepartmentList();
+
+    public Department fetchDepartmentById(Long departmentId);
 }
