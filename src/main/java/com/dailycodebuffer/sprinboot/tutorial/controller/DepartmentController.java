@@ -2,7 +2,6 @@ package com.dailycodebuffer.sprinboot.tutorial.controller;
 
 import com.dailycodebuffer.sprinboot.tutorial.entity.Department;
 import com.dailycodebuffer.sprinboot.tutorial.service.DepartmentService;
-import com.dailycodebuffer.sprinboot.tutorial.service.DepartmentServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -26,4 +25,5 @@ public class DepartmentController {
     public List<Department> fetchDepartmentList() {
         return departmentService.fetchDepartmentList();
     }
+
 }
