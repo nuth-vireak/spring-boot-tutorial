@@ -5,13 +5,15 @@ import com.dailycodebuffer.sprinboot.tutorial.entity.Department;
 import java.util.List;
 
 public interface DepartmentService {
-    public Department saveDepartment(Department department);
+    Department saveDepartment(Department department);
 
-    public List<Department> fetchDepartmentList();
+    List<Department> fetchDepartmentList();
 
-    public Department fetchDepartmentById(Long departmentId);
+    Department fetchDepartmentById(Long departmentId);
 
-    public void deleteDepartmentById(Long departmentId);
+    void deleteDepartmentById(Long departmentId);
 
-    public Department updateDepartmentById(Long departmentId, Department department);
+    Department updateDepartmentById(Long departmentId, Department department);
+
+    Department fetchDepartmentByName(String departmentName);
 }

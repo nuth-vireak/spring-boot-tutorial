@@ -10,7 +10,6 @@ public class SpringBootTutorialApplication {
 		SpringApplication.run(SpringBootTutorialApplication.class, args);
 	}
 
-    // TO-DO: 2:43:32 Fetch Data by Name
-	// today
+    // TO-DO: 2:59:19 Adding Loggers
 }
 
