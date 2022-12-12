@@ -1,6 +1,7 @@
 package com.dailycodebuffer.sprinboot.tutorial.service;
 
 import com.dailycodebuffer.sprinboot.tutorial.entity.Department;
+import com.dailycodebuffer.sprinboot.tutorial.error.DepartmentNotFoundException;
 
 import java.util.List;
 
@@ -9,7 +10,7 @@ public interface DepartmentService {
 
     List<Department> fetchDepartmentList();
 
-    Department fetchDepartmentById(Long departmentId);
+    Department fetchDepartmentById(Long departmentId) throws DepartmentNotFoundException;
 
     void deleteDepartmentById(Long departmentId);
 
