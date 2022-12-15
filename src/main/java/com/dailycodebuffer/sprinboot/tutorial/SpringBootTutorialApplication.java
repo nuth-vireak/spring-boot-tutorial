@@ -10,6 +10,6 @@ public class SpringBootTutorialApplication {
 		SpringApplication.run(SpringBootTutorialApplication.class, args);
 	}
 
-    // TO-DO: 3:23:00 Changing H2 -> MYSQL
+    // TO-DO: 3:26:00 Changing H2 -> MYSQL
 }
 
