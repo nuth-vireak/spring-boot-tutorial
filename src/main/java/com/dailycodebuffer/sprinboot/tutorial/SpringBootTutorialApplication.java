@@ -10,7 +10,6 @@ public class SpringBootTutorialApplication {
 		SpringApplication.run(SpringBootTutorialApplication.class, args);
 	}
 
-    // TO-DO: 3:26:00 Changing H2 -> MYSQL
-	// Today
+    // TO-DO: 3:30:00 Unit Testing Service Layer
 }
 
