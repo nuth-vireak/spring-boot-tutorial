@@ -2,6 +2,7 @@ package com.dailycodebuffer.sprinboot.tutorial.repository;
 
 import com.dailycodebuffer.sprinboot.tutorial.entity.Department;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
@@ -27,4 +28,12 @@ class DepartmentRepositoryTest {
 
         testEntityManager.persist(department);
     }
+
+    @Test
+    public void whenFindById_thenReturnDepartment() {
+
+        Department department = departmentRepository.findById(1l).get();
+        assertEquals(department.getDepartmentName(), "Mechanical Engineering");
+    }
+
 }
