@@ -1,6 +1,7 @@
 package com.dailycodebuffer.sprinboot.tutorial.controller;
 
 import com.dailycodebuffer.sprinboot.tutorial.entity.Department;
+import com.dailycodebuffer.sprinboot.tutorial.error.DepartmentNotFoundException;
 import com.dailycodebuffer.sprinboot.tutorial.service.DepartmentService;
 import com.sun.xml.bind.v2.TODO;
 import org.junit.jupiter.api.BeforeEach;
@@ -61,7 +62,15 @@ class DepartmentControllerTest {
     }
 
     @Test
-    void fetchDepartmentById() {
+    void fetchDepartmentById() throws Exception {
         //TODO: Unit Testing For Controller layer - fetchDepartmentById method
+        Mockito.when(departmentService.fetchDepartmentById(1L))
+                .thenReturn(department);
+
+        mockMvc.perform(get("/departments/1")
+                .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.departmentName")
+                        .value(department.getDepartmentName()));
     }
 }
