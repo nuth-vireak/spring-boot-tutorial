@@ -1,0 +1,16 @@
+server:
+    port: 8082
+spring:
+    datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        password: 1234
+        url: jdbc:mysql://localhost:3306/dcbapp
+        username: root
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+welcome:
+    message: Welcome to Daily Code Buffer
+
+# TODO: Profile in Spring Boot 4:08:00
