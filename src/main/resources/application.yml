@@ -38,8 +38,8 @@ spring:
     config:
         activate:
             on-profile: qa
-welcome:
-    message: Welcome to Daily Code Buffer
+#welcome:
+#    message: Welcome to Daily Code Buffer
 
 ---
 
@@ -57,4 +57,4 @@ spring:
         activate:
             on-profile: prod
 
-# TODO: Running SpringBoot with multiple Profile 4:13:00
+# TODO: SpringBoot Actuator 4:17:00
