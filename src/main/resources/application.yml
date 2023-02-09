@@ -3,7 +3,7 @@ server:
 
 spring:
   profiles:
-      active: qa
+      active: dev
 
 ---
 
@@ -22,6 +22,12 @@ spring:
             on-profile: dev
 welcome:
     message: Welcome to Daily Code Buffer
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 
 ---
 
@@ -57,4 +63,4 @@ spring:
         activate:
             on-profile: prod
 
-# TODO: SpringBoot Actuator 4:17:00
+

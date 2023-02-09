@@ -10,5 +10,4 @@ public class SpringBootTutorialApplication {
 		SpringApplication.run(SpringBootTutorialApplication.class, args);
 	}
 
-	// TODO: Profile in Spring Boot 4:08:00
 }
