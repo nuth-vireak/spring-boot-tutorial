@@ -1,1 +1,1 @@
-# spring-boot-tutorial
+# spring-boot-master-class
